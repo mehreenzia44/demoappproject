@@ -4,14 +4,14 @@ class AddProductScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Product'),
+        title: const Text('Add Product'),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(
+            const Text(
               'Product Category',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
@@ -26,31 +26,31 @@ class AddProductScreen extends StatelessWidget {
                 // Handle category selection
               },
             ),
-            SizedBox(height: 10.0),
-            Text(
+            const SizedBox(height: 10.0),
+            const Text(
               'Product Name',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                 hintText: 'Enter Product Name',
               ),
             ),
-            SizedBox(height: 10.0),
-            Text(
+            const SizedBox(height: 10.0),
+            const Text(
               'Full Product name',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            Text(
+            const Text(
               'Product category + Product name here',
               style: TextStyle(color: Colors.grey),
             ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             ElevatedButton(
               onPressed: () {
                 // Handle create product action
               },
-              child: Text('CREATE LOT'),
+              child: const Text('CREATE LOT'),
             ),
           ],
         ),
